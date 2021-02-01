@@ -39,7 +39,7 @@ ${jssdkReady}
           `)
 
           const titleShare = '我为2021年抽了支开运签，你也来试试吧！'
-          const descriptionShare = '新年新气象，来支开运签！2021运势全掌握，更有“金御守”等你来拿。'
+          const descriptionShare = '抽签赢好运，分享送好礼。测新年运势，更有黄金御守等你来拿！'
           const linkShare = 'http://www.c9-d.com/3li6xun/xinniankaiyun'
           const thumbnailShare = 'http://www.c9-d.com/3li6xun/xinniankaiyun/thumbnail.jpg'
 
