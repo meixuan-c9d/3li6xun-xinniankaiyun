@@ -14,7 +14,9 @@
     "gsap": "^3.6.0",
     "lazysizes": "^5.3.0",
     "nuxt": "^2.14.12",
-    "preloadjs": "^1.0.1"
+    "preloadjs": "^1.0.1",
+    "promise-polyfill": "^8.2.0",
+    "whatwg-fetch": "^3.5.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
