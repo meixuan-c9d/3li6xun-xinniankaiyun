@@ -28,6 +28,14 @@ import {
 import { gsap } from 'gsap'
 
 export default {
+  mounted() {
+    if (window.scriptLoadedJweixin) {
+      this.$wxConfig()
+    } else {
+      const elScriptJweixin = document.getElementById('jweixin')
+      elScriptJweixin.onload = this.$wxConfig
+    }
+  },
   components: {
     Start: () => import('~/components/Start'),
     ChooseObject: () => import('~/components/ChooseObject'),
