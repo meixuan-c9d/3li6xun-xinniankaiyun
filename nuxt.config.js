@@ -71,5 +71,13 @@ export default {
         'autoprefixer': {}
 			}
     },
-  }
+    publicPath: process.env.NODE_ENV === 'production' 
+      ? 'http://www.c9-d.com/3li6xun/xinniankaiyun'
+      : ''
+  },
+  router: {
+    base: process.env.NODE_ENV === 'production' 
+      ? '/3li6xun/xinniankaiyun/'
+      : ''
+  },
 }
