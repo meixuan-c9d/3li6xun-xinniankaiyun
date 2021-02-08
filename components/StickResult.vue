@@ -313,7 +313,7 @@ export default {
     const timeline = gsap.timeline()
     const timelineHeader = gsap.timeline({
       onComplete: () => {
-        setTimeout(this.getStickDetail, 1250)
+        setTimeout(this.getStickDetail, 500)
       }
     })
     const timelineBody = gsap.timeline()
