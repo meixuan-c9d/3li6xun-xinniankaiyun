@@ -169,7 +169,7 @@ export const actions = {
 
     const sticksScoped = sticksScopedCandidates[state.objectChosen]
 
-    const value = state.sticks[
+    const value = sticksScoped[
       Math.floor(
         Math.random() * 
         // state.sticks.length
