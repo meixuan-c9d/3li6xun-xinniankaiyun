@@ -24,7 +24,7 @@
         <img 
           v-if="objectChosen === 'ziji'" 
           src="~/assets/get-stick/object-ziji.png" 
-          style="position: relative; right: 1.5vw"
+          
           alt=""
         />
         <img 
