@@ -123,10 +123,57 @@ export const mutations = {
 
 export const actions = {
   getStick({ state, commit }) {
+
+    const sticksScopedCandidates = {
+      'ziji': state.sticks
+        .filter(stick => 
+          stick.id === 'jiankang' ||
+          stick.id === 'yuanfa' ||
+          stick.id === 'zhaocai' ||
+          stick.id === 'hongyun' ||
+          stick.id === 'pingan'
+        ),
+      'airen': state.sticks
+        .filter(stick =>
+          stick.id === 'jiankang' ||
+          stick.id === 'zhaocai' ||
+          stick.id === 'hongyun' ||
+          stick.id === 'pingan' ||
+          stick.id === 'qiancheng'
+        ),
+      'haizi': state.sticks
+        .filter(stick =>
+          stick.id === 'jiankang' ||
+          stick.id === 'hongyun' ||
+          stick.id === 'pingan' ||
+          stick.id === 'caixue' ||
+          stick.id === 'qiancheng'
+        ),
+      'zhangbei': state.sticks
+        .filter(stick =>
+          stick.id === 'jiankang' ||
+          stick.id === 'hongyun' ||
+          stick.id === 'pingan' ||
+          stick.id === 'xinhuai' ||
+          stick.id === 'nafu'
+        ),
+      'pengyou': state.sticks
+        .filter(stick =>
+          stick.id === 'jiankang' ||
+          stick.id === 'yuanfa' ||
+          stick.id === 'zhaocai' ||
+          stick.id === 'hongyun' ||
+          stick.id === 'qiancheng'
+        )
+    }
+
+    const sticksScoped = sticksScopedCandidates[state.objectChosen]
+
     const value = state.sticks[
       Math.floor(
         Math.random() * 
-        state.sticks.length
+        // state.sticks.length
+        sticksScoped.length
       )
     ]
     commit('updateResult', {
