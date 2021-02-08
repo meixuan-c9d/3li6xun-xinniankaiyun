@@ -328,8 +328,9 @@ export default {
         timeline
           .add(tweenSponsorAppear)
           .add(tweenResultAppear)
+          .add(tweenButtonsAppear, '<')
           .add(timelineGlyph, '>1.25')
-          .add(tweenButtonsAppear)
+          // .add(tweenButtonsAppear)
           
           
       }
